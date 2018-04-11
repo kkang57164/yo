@@ -1,0 +1,182 @@
+<!doctype html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Introduce Computer Language </title>
+            <style>
+                a{
+                    color:floralwhite;
+                    text-decoration: none;
+                }
+                body{
+                    margin:0px;
+                    padding:0px;
+                    background-image:url(background.jpg);
+                }
+                .wrap{
+                    width:100%;
+                    height:100%;
+                }
+                header{
+                    width:99.9%;
+                    height:163px;
+                    border:1px;
+                    font-size:23px;
+                }
+                #logo{
+                    display:table;
+                    margin-left:auto;
+                    margin-right:auto;
+                    margin-top:110px;
+                }
+                .box{
+                    width:25%;
+                    height:300px;
+                    margin-top:20px;
+                    margin-right:20px;
+                    margin-left:80px;
+                    margin-bottom:20px;
+                    float:left;
+                    position:relative;
+                    left:3.5%;
+                    top:20px;
+                    border:1px ;
+                    border-radius:2em;
+                }
+                .caption{
+                    position: absolute;
+                    top:250px;
+                    width:100%;
+                    height:50px;
+                    background:rgba(246,246,246,0.5);
+                    opacity:0;
+                    transition: all 1s ease;
+                    z-index:10px;
+                    text-align:center;
+                    color:#000080;
+                    font-size:30px;
+                    padding-top:15px;
+                    font-weight:bold;
+                }
+                .box:hover .caption{
+                    opacity: 1;
+                    transform: translateY(-135px);
+                }
+                info{
+                    width:99.9%;
+                    height:142px;
+                    margin-top:65px;
+                    float:left;
+                    border:1px solid black;
+                    background-color:#3d3c3a;
+                    color:white;
+                    text-align: center;
+                }
+                .img{
+                    width:100%;
+                    height:100%;
+                    border-radius:2em;
+                }
+                #span{
+                    color:cornflowerblue;
+                }
+                #list{
+                    list-style: none;
+                    margin-left: 1500px;
+                }
+                menu{
+                    width:99.9%;
+                    height:48px;
+                    position:relative;
+                    right:40px; 
+                    border:1px solid black;
+                    background-color:#3d3c3a;
+                    margin-top:0px; 
+                    color:white;
+                    text-align: center;
+                    font-size:20px;
+                    margin-right:90px;
+                }
+            </style>    
+            <script type="text/javascript">
+                function goLink(){
+                    var frm=document.link_form;
+                    if(frm.link.value !=""){
+                        window.open(frm.link.value);
+                    }
+                }
+            </script>
+        </head>
+        <body>
+            <div class=wrap>
+                <menu>
+                <a>20175311  융합소프트웨어학과 박건형</a>
+                </menu>
+                <header>    
+                    <div id=logo>
+                        <h1>Introduce Computer Language</h1>
+                    </div>
+                </header>
+                <box1 class=box >
+                   <a href="hi2.html"target="_blank"> <img class=img src="c.png">
+                    <div class=caption>
+                        C
+                    </div>
+                   </a>
+                </box1>
+                <box2 class=box>
+                   <a href="hi3.html"target="_blank"> <img class=img src="java.jpg">
+                    <div class=caption>
+                        JAVA
+                    </div>
+                   </a>
+                </box2>
+                <box3 class=box>
+                   <a href="hi4.html" target="_blank"> <img class=img src="python.jpg">
+                    <div class=caption>
+                        PYTHON
+                    </div>
+                   </a>
+                </box3>
+                <box4 class=box class=cover>
+                   <a href="hi5.html" target="_blank"> <img class=img src="html,css.jpg">
+                    <div class=caption>
+                        HTML/CSS
+                    </div>
+                   </a>
+                </box4>
+                <box5 class=box class=cover>
+                    <a href="https://programmers.co.kr/learn/courses/3" target="_blank"><img class=img src="javascript.png">
+                    <div class=caption>
+                        JAVA SCRIPT
+                    </div>
+                    </a>
+                </box5>
+                <box6 class=box class=cover>
+                    <a href="https://scratch.mit.edu/" target="_blank"><img class=img src="scratch.png">
+                    <div class=caption>
+                        SCRATCH
+                    </div>
+                    </a>
+                </box6>
+                <info>
+                    <ul id=list>
+                    <li><label for="major">관련 사이트</label>
+                    <select size="1" onchange="window.open(this.value)">
+                        <option value="https://www.opentutorials.org/course/1" target="_blank">생활코딩</option>
+                        <option value="https://programmers.co.kr/" target="blank">프로그래머스</option>
+                        <option value="https://edu.goorm.io/" target="_blank">구룸 애듀</option>
+                        <option value="https://www.inflearn.com/" target="_blank">인프런</option>
+                        <option value="https://www.youtube.com/channel/UC0h8NzL2vllvp3PjdoYSK4g" target="_blank">왼손코딩</option>
+                    </select>
+                    </ul>
+                    <div>
+                    <img src="sns.png">
+                    </div>
+                    
+                    Copyright 2017(c) Geonheung Park.All right reserved.홈페이지 수정문의 e-mail:po05105@daum.net
+
+                </info>
+            </div> 
+        </body>
+    </html>
